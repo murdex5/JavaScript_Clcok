@@ -16,9 +16,9 @@ body {
 } */
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: right;
-    position: relative;
     right: 20px;
     bottom: 10px;
     padding: 10px;
@@ -65,6 +65,35 @@ body {
     bottom: 50px;
     transition: linear 0.5s;
 }
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 10px;
+        text-decoration: none;
+        transition: linear 0.5s;
+        color: black;
+    }
+
+    .clock_div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
+        border: 10px solid;
+        border-radius: 20px;
+        width: 300px;
+        height: 100px;
+        margin-top: 250px;
+        bottom: 50px;
+        transition: linear 0.5s;
+    }
+  }
 
 .clock_div:hover {
     border-radius: 25px;
